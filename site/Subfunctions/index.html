@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Subfunctions - MISCnn wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Subfunctions";
+    var mkdocs_page_input_path = "Subfunctions.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <a href="">
+        <div class="miscnn-logo">
+          <img src="https://raw.githubusercontent.com/gleichde/gleichde.github.io/master/logo.JPG" class="miscnn-logo-img">
+          
+        </div>
+      </a>
+
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Home/">What is MIScnn?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Usage/">Basic Usage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Tutorials/">Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Examples/">Examples</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation - Core</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Data-IO/">Data I/O</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Preprocessor/">Preprocessor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Data-Augmentation/">Data Augmentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Model/">Neural Network Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Validation/">Validation Techniques</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation - Interfaces</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Architectures/">Architectures</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Metrics/">Metrics</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Subfunctions</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../IO-Interfaces/">I/O Interfaces</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation - Extras</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Sample/">Sample</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Other</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contribute/">How to Contribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Credits/">Author and Contacts</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MISCnn wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation - Interfaces &raquo;</li>
+        
+      
+    
+    <li>Subfunctions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/frankkramer-lab/MIScnn/"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Image preprocessing is defined as a method or technique which modify the image before passing it to the neural network model. The aim of preprocessing methods is to extensively increase performance due to simplification of information.</p>
+<p>In medical image segmentation, it is required to perform extensive preprocessing to the medical images. Common preprocessing methods range from intensity value normalization to image resizing.<br />
+The preprocessing is not only required for performance increase, but also to reduce the image information content in order to be fit-able in the neural network model in terms of GPU RAM size.</p>
+<p>In the current state-of-the-art mdeical image segmentation pipelines, several preprocessing methods are common: Resampling slice thickness, resizing images to fit into GPUs and intensity value normalization.</p>
+<p>In order to provide a wide variety of preprocessing methods, MIScnn offers the Subfunction modularity. The user is able to create a list of desired preprocessing functions (in MIScnn called Subfunctions) and pass them to the Preprocessor class, which allows high configurability for all scenarios.</p>
+<h2 id="usage-of-miscnn-subfunctions">Usage of MIScnn Subfunctions</h2>
+<p>A list of Subfunctions can be passed to the Preprocessor class initialization.<br />
+The Preprocessor automatically uses the list of Subfunctions and <strong>sequentially</strong> runs the Subfunctions on the data set.</p>
+<p>For predictions, the medical images will also be automatically postprocessed in order to restore the predicted segmentation for the original image features (e.g. resizing back to original size).</p>
+<pre><code class="python"># Import desired Subfunctions
+from processing.subfunctions import Normalization
+from processing.subfunctions import Resampling
+
+# Initialize Subfunctions into a list
+sf_normalization = Normalization(z_score=True)
+sf_resampling = Resampling(new_spacing=(3.22, 1.62, 1.62))
+sf = [sf_normalization, sf_resampling]
+
+# Pass list of Subfunctions to Preprocessor class
+pp = Preprocessor(data_io, batch_size=2, subfunctions=sf)
+</code></pre>
+
+<h2 id="available-subfunctions-provided-by-miscnn">Available Subfunctions provided by MIScnn</h2>
+<h4 id="intensity-value-normalization">Intensity Value Normalization</h4>
+<p>A Normalization Subfunction class which normalizes the intensity pixel values of an image using the Z-Score technique (default setting) or through scaling to [0,1].</p>
+<pre><code class="python">from processing.subfunctions import Normalization
+sf_norm = Normalization(z_score=True)
+
+pp = Preprocessor(data_io, batch_size=2, subfunctions=[sf_norm])
+</code></pre>
+
+<hr />
+<h4 id="resizing">Resizing</h4>
+<p>A Resize Subfunction class which resizes an images according to a desired shape.</p>
+<pre><code class="python">from processing.subfunctions import Resize
+sf_resize = Resize(new_shape=(128,128,128))
+
+pp = Preprocessor(data_io, batch_size=2, subfunctions=[sf_resize])
+</code></pre>
+
+<hr />
+<h4 id="resampling">Resampling</h4>
+<p>A Resampling Subfunction class which resizes an images according to a desired voxel spacing.<br />
+This function only works with already cached "spacing" matrix in the detailed information dictionary of the sample.</p>
+<pre><code class="python">from processing.subfunctions import Resampling
+sf_resampling = Resampling(new_spacing=(3.22, 1.62, 1.62))
+
+pp = Preprocessor(data_io, batch_size=2, subfunctions=[sf_resampling])
+</code></pre>
+
+<hr />
+<h4 id="clipping">Clipping</h4>
+<p>A Clipping Subfunction class which can be used for clipping intensity pixel values on a certain range.</p>
+<pre><code class="python">from processing.subfunctions import Clipping
+sf_clip = Clipping(min=25, max=75)
+
+pp = Preprocessor(data_io, batch_size=2, subfunctions=[sf_clip])
+</code></pre>
+
+<hr />
+<h2 id="creation-of-custom-subfunctions">Creation of custom Subfunctions</h2>
+<p>todo</p>
+<pre><code class="python">todo
+</code></pre>
+
+<h2 id="abstract-base-class-for-subfunctions">Abstract Base Class for Subfunctions</h2>
+<p>MIScnn also offers a documented Abstract Base Class for easier creating of custom Subfunctions for your specific needs.</p>
+<p>A Subfunction is a class which consists of an init, preprocessing and postprocessing function.</p>
+<pre><code class="python">#-----------------------------------------------------#
+#                   Library imports                   #
+#-----------------------------------------------------#
+# External libraries
+from abc import ABC, abstractmethod
+
+#-----------------------------------------------------#
+#     Abstract Interface for the Subfunction class    #
+#-----------------------------------------------------#
+&quot;&quot;&quot; An abstract base class for a processing Subfcuntion class.
+
+Methods:
+    __init__                Object creation function
+    preprocessing:          Transform the imaging data
+    postprocessing:         Transform the predicted segmentation
+&quot;&quot;&quot;
+class Abstract_Subfunction(ABC):
+    #---------------------------------------------#
+    #                   __init__                  #
+    #---------------------------------------------#
+    &quot;&quot;&quot; Functions which will be called during the Subfunction object creation.
+        This function can be used to pass variables and options in the Subfunction instance.
+        The are no mandatory required parameters for the initialization.
+
+        Parameter:
+            None
+        Return:
+            None
+    &quot;&quot;&quot;
+    @abstractmethod
+    def __init__(self):
+        pass
+    #---------------------------------------------#
+    #                preprocessing                #
+    #---------------------------------------------#
+    &quot;&quot;&quot; Transform the image according to the subfunction during preprocessing (training + prediction).
+        This is an in-place transformation of the sample object, therefore nothing is returned.
+        It is possible to pass configurations through the initialization function of this class.
+
+        Parameter:
+            sample (Sample class):      Sample class object containing the imaging data (sample.img_data)
+                                        and optional segmentation data (sample.seg_data)
+            training (boolean):         Boolean variable indicating, if segmentation data is present at the
+                                        sample object.
+                                        If training is true, segmentation data in the sample object is available,
+                                        if training is false, sample.seg_data is None
+        Return:
+            None
+    &quot;&quot;&quot;
+    @abstractmethod
+    def preprocessing(self, sample, training=True):
+        pass
+    #---------------------------------------------#
+    #                postprocessing               #
+    #---------------------------------------------#
+    &quot;&quot;&quot; Transform the prediction according to the subfunction during postprocessing (prediction).
+        This is NOT an in-place transformation of the prediction, therefore it is REQUIRED to
+        return the processed prediction array.
+        It is possible to pass configurations through the initialization function of this class.
+
+        Parameter:
+            prediction (numpy array):   Numpy array of the predicted segmentation
+        Return:
+            prediction (numpy array):   Numpy array of processed predicted segmentation
+    &quot;&quot;&quot;
+    @abstractmethod
+    def postprocessing(self, prediction):
+        return prediction
+
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../IO-Interfaces/" class="btn btn-neutral float-right" title="I/O Interfaces">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Metrics/" class="btn btn-neutral" title="Metrics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+  <p> <a href="/">Home</a> | <a href="/Install/">Installation</a> | <a href="/Usage/">Usage</a> | <a href="/Examples/">Examples</a> | <a href="/Credits/">Contact</a></p>
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/frankkramer-lab/MIScnn/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Metrics/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../IO-Interfaces/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script type="text/javascript" defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

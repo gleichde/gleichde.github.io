@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Metrics - MISCnn wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Metrics";
+    var mkdocs_page_input_path = "Metrics.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <a href="">
+        <div class="miscnn-logo">
+          <img src="https://raw.githubusercontent.com/gleichde/gleichde.github.io/master/logo.JPG" class="miscnn-logo-img">
+          
+        </div>
+      </a>
+
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Home/">What is MIScnn?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Install/">Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Usage/">Basic Usage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Tutorials/">Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Examples/">Examples</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation - Core</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Data-IO/">Data I/O</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Preprocessor/">Preprocessor</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Data-Augmentation/">Data Augmentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Model/">Neural Network Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Validation/">Validation Techniques</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation - Interfaces</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Architectures/">Architectures</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Metrics</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Subfunctions/">Subfunctions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../IO-Interfaces/">I/O Interfaces</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation - Extras</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Sample/">Sample</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Other</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Contribute/">How to Contribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Credits/">Author and Contacts</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MISCnn wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation - Interfaces &raquo;</li>
+        
+      
+    
+    <li>Metrics</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/frankkramer-lab/MIScnn/"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>A loss function or metric (or objective function, or optimization score function) is a scoring function to evaluate the current predictive power and performance of a model.</p>
+<p>A loss function is required for training and have to be decreasing, if the model performance is increasing. During the training process, the neural network model varies weights of its neurons and tries to optimize the loss function to be as small as possible. A model can only use one loss function.</p>
+<p>Metrics are for user evaluation in order to give insights on the training process or the current performance status of the model. It is possible to pass multiple metrics to the model.</p>
+<p>MIScnn loss functions and metrics are based on Keras loss/metric functions.<br />
+Any loss or metric function defined in Keras, in miscnn.neural_network.metrics or any custom function, which follows the Keras metric guidelines, can be used in MIScnn.</p>
+<h2 id="usage-of-loss-functions-and-metrics">Usage of loss functions and metrics</h2>
+<p>The loss function and metrics can be defined at the neural network model class initialization.<br />
+It is possible to pass the desired loss function with the 'loss' tag and the metrics within a standard python list with the 'metrics' tag.</p>
+<pre><code class="python"># Import desired loss functions or metrics
+from miscnn.neural_network.metrics import tversky_loss, dice_soft
+import keras
+
+# Add the loss function &amp; metrics to the neural network model
+model = Neural_Network(preprocessor=pp,
+                       loss=tversky_loss,
+                       metrics=[dice_soft, keras.losses.categorical_crossentropy])
+</code></pre>
+
+<p>If no loss or metrics are provided, MIScnn uses the Tversky loss function and no metrics as default.</p>
+<h2 id="available-loss-functions-and-metrics-provided-by-miscnn">Available loss functions and metrics provided by MIScnn</h2>
+<h4 id="tversky-loss">Tversky loss</h4>
+<p>A generalized loss function based on the Tversky index to address the issue of data imbalance and achieve much better trade-off between precision and recall in training 3D fully convo- lutional deep neural networks.<br />
+Reference: <a href="https://arxiv.org/abs/1706.05721">https://arxiv.org/abs/1706.05721</a></p>
+<pre><code class="python">from miscnn.neural_network.metrics import tversky_loss
+model = Neural_Network(preprocessor=pp, loss=tversky_loss)
+</code></pre>
+
+<hr />
+<h4 id="sum-of-tversky-loss-and-cross-entropy">Sum of Tversky loss and Cross-entropy</h4>
+<p>Based on the idea of Fabian Isensee et al. for using the sum of the Dice Similarity Coefficient and the Cross-Entropy, MIScnn implemented a loss function based on the sum of the Tversky loss &amp; Cross-Entropy loss function.<br />
+Reference Fabian Isensee et al: <a href="http://arxiv.org/abs/1809.10486">http://arxiv.org/abs/1809.10486</a></p>
+<pre><code class="python">from miscnn.neural_network.metrics import tversky_crossentropy
+model = Neural_Network(preprocessor=pp, loss=tversky_crossentropy)
+</code></pre>
+
+<hr />
+<h4 id="dice-similarity-coefficient-dsc">Dice Similarity Coefficient (DSC)</h4>
+<p>The Dice Similarity Coefficient is one the most popular loss functions for training deep learning models in medical image segmentation. It has the ability the handle strong class imbalance which is common in medical imaging. The standard Dice Similarity Coefficient is suited for binary medical image segmentation problems.<br />
+Reference: -&gt;  add wikipedia link</p>
+<pre><code class="python">from miscnn.neural_network.metrics import dice_coefficient_loss
+model = Neural_Network(preprocessor=pp, loss=dice_coefficient_loss)
+</code></pre>
+
+<hr />
+<h4 id="soft-dice-similarity-coefficient">Soft Dice Similarity Coefficient</h4>
+<p>The Soft Dice Similarity Coefficient is an extension of the standard Dice Similarity Coeffcient. The only difference is, that the soft DSC is normalized on the number of classes. Therefore, the soft Dice Similarity Coefficient is more suited for multi-class (&gt;2 classes) medical image segmentation problems.<br />
+Reference: -&gt;  add wikipedia link</p>
+<pre><code class="python">from miscnn.neural_network.metrics import dice_soft_loss
+model = Neural_Network(preprocessor=pp, loss=dice_soft_loss)
+</code></pre>
+
+<hr />
+<h4 id="sum-of-soft-dice-similarity-coefficient-and-cross-entropy">Sum of Soft Dice Similarity Coefficient and Cross-entropy</h4>
+<p>In diverse medical image segmentation challenges, the winner Fabian Isensee et al. is always using the sum of the soft Dice Similarity Coeffcient and the Cross-Entropy in order to achieve the best performance. Additionally, Fabian Isensee et al. also uses this loss function in his powerful software nnUnet.<br />
+Reference: <a href="http://arxiv.org/abs/1809.10486">http://arxiv.org/abs/1809.10486</a></p>
+<pre><code class="python">from miscnn.neural_network.metrics import dice_crossentropy
+model = Neural_Network(preprocessor=pp, loss=dice_crossentropy)
+</code></pre>
+
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Subfunctions/" class="btn btn-neutral float-right" title="Subfunctions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Architectures/" class="btn btn-neutral" title="Architectures"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+  <p> <a href="/">Home</a> | <a href="/Install/">Installation</a> | <a href="/Usage/">Usage</a> | <a href="/Examples/">Examples</a> | <a href="/Credits/">Contact</a></p>
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/frankkramer-lab/MIScnn/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Architectures/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Subfunctions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script type="text/javascript" defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
